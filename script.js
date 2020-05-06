@@ -12,7 +12,7 @@ let index=0;
 
 /* questions options & answers */
 
-const  questions=[{
+let  questions=[{
     q:"Which Williams sister has won more Grand Slam titles?",
     options:["Venus", "Sienna", "Serena", "Vienna"],
     answer:2
@@ -46,10 +46,10 @@ const  questions=[{
     function load(){
         questionNumberSpan.innerHTML=index+1;
             question.innerHTML=questions[questionIndex].q;
-            op1.innerHTML=questions[questionIndex].options[0];
-            op2.innerHTML=questions[questionIndex].options[1];
-            op3.innerHTML=questions[questionIndex].options[2];
-            op4.innerHTML=questions[questionIndex].options[3];
+            op1.innerHTML=questions[questionIndex].options[1];
+            op2.innerHTML=questions[questionIndex].options[2];
+            op3.innerHTML=questions[questionIndex].options[3];
+            op4.innerHTML=questions[questionIndex].options[4];
             index++;
     }
     function check(element){
